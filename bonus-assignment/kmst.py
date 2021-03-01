@@ -2,7 +2,7 @@
 """
 Created on Sat Jun 22 01:06:38 2019
 
-@author: Stefanos
+@author: stef4k
 """
 import math
 import pprint
