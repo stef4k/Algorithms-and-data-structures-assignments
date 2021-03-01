@@ -1,4 +1,4 @@
-# assignment-2019-bonus
+# Assignment-2019-bonus
 ### Description
 This project given n points in the
 two-dimensional space and a positive integer k (k<=n),
@@ -63,7 +63,8 @@ equal to k.
 7. The solution value for the pair (si, sj) is the length of this MST.
 
 From all the distinct pairs select the pair with the minimum length of its MST. That MST is the soltuion and together with the length and the connections,
-the appropriate output is made.
+the appropriate output is made.
+
 
 ### Installation
 Clone the whole project to your computer via git
