@@ -15,7 +15,7 @@ The output of the project describes the number of points that the
 MST (minimum-spanning tree) consists of, the length of the MST 
 ( the sum of distances of all the connections used in the MST) 
 and finally the connections of the  points that are used to construct
-the MST.
+the MST. Full description is found [here](https://github.com/stef4k/Algorithms-and-data-structures-assignments2019/blob/main/bonus-assignment/ravi1996.pdf)
 
 ### Importance
 The finding of MST can be quite important in various cases. Firstly,
