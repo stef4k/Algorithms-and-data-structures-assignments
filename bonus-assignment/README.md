@@ -69,11 +69,11 @@ the appropriate output is made.
 ### Installation
 Clone the whole project to your computer via git
 ```
-git clone https://github.com/dmst-algorithms-course/stef4k-algo-assignments.git
+git clone https://github.com/stef4k/Algorithms-and-data-structures-assignments2019.git
 ```
 Select the right project
 ```
-cd assignment-2019-bonus/
+cd bonus-assignment/
 ```
 
 ### Usage
