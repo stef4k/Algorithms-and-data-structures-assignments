@@ -2,7 +2,7 @@
 """
 Created on Mon Apr  1 20:42:14 2019
 
-@author: Stefanos
+@author: stef4k
 """
 import sys
 import Levenshtein #import Levenshtein through virtual environment
