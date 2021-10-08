@@ -32,7 +32,7 @@ where `input_file` is the name of the file that contains the graph we wish to an
 In other words, each line of the file describes one edge between two nodes. In fact, all graphs are undirected.
 
 ## Example
-The script is runned for the text file [example_graph.txt](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-1/graphs/example_graph.txt):  
+The script is run for the text file [example_graph.txt](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-1/graphs/example_graph.txt):  
 
 `python k_cores.py example_graph.txt`  
 
