@@ -49,6 +49,10 @@ Run the script from the command line:
 
 In the command, <dictionary_file> is the dictionary we want to use. The parameter <start_word> is the word we want to start and <target_word> is the word we want to reach.
 
+If there is a way to reach the <target_word> from the <start_word>, the output should be:
+
+        start_word, word_1, word_2, ..., target_word
+
 If there is no way to reach the <target_word> from the <start_word>, the output should be:
 
     start_word
