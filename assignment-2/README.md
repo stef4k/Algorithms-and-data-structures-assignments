@@ -51,7 +51,7 @@ In the command, <dictionary_file> is the dictionary we want to use. The paramete
 
 If there is a way to reach the <target_word> from the <start_word>, the output should be:
 
-        start_word, word_1, word_2, ..., target_word
+    start_word, word_1, word_2, ..., target_word
 
 If there is no way to reach the <target_word> from the <start_word>, the output should be:
 
