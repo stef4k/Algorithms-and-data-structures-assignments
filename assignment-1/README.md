@@ -8,7 +8,7 @@ This assignment required to detect the [k-cores](https://en.wikipedia.org/wiki/D
 ## Running the script
 Use the command line to run the script:  
 
-`python k_cores.py <input_file>`  
+    python k_cores.py <input_file>
 
 where `input_file` is the name of the file that contains the graph we wish to analyze. The graph files have the following form:
 
@@ -34,8 +34,8 @@ In other words, each line of the file describes one edge between two nodes. In f
 ## Example
 The script is run for the text file [example_graph.txt](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-1/graphs/example_graph.txt):  
 
-`python k_cores.py example_graph.txt`  
-
+    python k_cores.py example_graph.txt
+    
 The exit of the script should be the following:  
 
 0 2  
