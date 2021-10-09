@@ -5,4 +5,5 @@ The following assignments show different algorithm implementations and data stru
 * [Degeneracy - Graph Theory](https://github.com/stef4k/Algorithms-and-data-structures-assignments/tree/main/assignment-1)
 * [Broken Telephone](https://github.com/stef4k/Algorithms-and-data-structures-assignments/tree/main/assignment-2)
 * [Plant Grammar](https://github.com/stef4k/Algorithms-and-data-structures-assignments/tree/main/assignment-3)
+* [K-Minimum Spanning Tree](https://github.com/stef4k/Algorithms-and-data-structures-assignments/tree/main/bonus-assignment)
 
