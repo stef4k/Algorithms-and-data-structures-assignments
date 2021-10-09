@@ -1,4 +1,4 @@
-# Assignment-2019-bonus
+# K-Minimum Spanning Tree - Bonus Assignment
 ### Description
 This project given n points in the
 two-dimensional space and a positive integer k (k<=n),
