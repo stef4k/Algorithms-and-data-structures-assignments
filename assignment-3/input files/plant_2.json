@@ -1,0 +1,11 @@
+{
+  "axiom" : "F",
+  "left_angle" : 20,
+  "right_angle" : 20,
+  "step_length" : 3,
+  "order" : 5,
+  "start_angle" : 90,
+  "rules" : {
+    "F" : "F[+F]F[-F][F]"
+  }
+}

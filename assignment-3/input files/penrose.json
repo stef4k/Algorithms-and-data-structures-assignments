@@ -1,0 +1,15 @@
+{
+  "axiom" : "[X]++[X]++[X]++[X]++[X]",
+  "left_angle" : 36.0,
+  "right_angle" : 36.0,
+  "step_length" : 20,
+  "order" : 5,
+  "start_angle" : 0,  
+  "rules" : {
+    "W" : "YF++ZF----XF[-YF----WF]++",
+    "X" : "+YF--ZF[---WF--XF]+",
+    "Y" : "-WF++XF[+++YF++ZF]-",
+    "Z" : "--YF++++WF[+ZF++++XF]--XF",
+    "F" : ""
+  }
+}

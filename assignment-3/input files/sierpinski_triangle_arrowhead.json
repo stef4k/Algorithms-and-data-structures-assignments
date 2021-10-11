@@ -1,0 +1,12 @@
+{
+  "axiom" : "F",
+  "left_angle": 60.0,
+  "right_angle": 60.0,
+  "step_length": 5,
+  "order": 6,
+  "start_angle" : 0,    
+  "rules" : {
+    "F": "G-F-G",    
+    "G": "F+G+F"
+  }
+}
