@@ -1,5 +1,5 @@
 # K-Minimum Spanning Tree - Bonus Assignment
-### Description
+## Description
 This project given n points in the
 two-dimensional space and a positive integer k (k<=n),
 constructs a tree spanning at least k of
@@ -17,7 +17,7 @@ MST (minimum-spanning tree) consists of, the length of the MST
 and finally the connections of the  points that are used to construct
 the MST. Full description is found [here](https://github.com/stef4k/Algorithms-and-data-structures-assignments2019/blob/main/bonus-assignment/ravi1996.pdf)
 
-### Importance
+## Importance
 The finding of MST can be quite important in various cases. Firstly,
 in the case of a telecommunications company trying to lay cable in a new
 neighborhood. If it is constrained to bury the cable only along certain paths 
@@ -36,7 +36,7 @@ nonnegative edge weights and a specified number k, find a tree of minimum weight
 spanning at least k nodes. The solution to the problem will be a tree spanning
 exactly k nodes. This problem is called the k-minimum spanning tree (kMST).
 
-### Algorithm
+## Algorithm
 Before calculations start, k is checked if it has a square root without any decimal places. If not, k is continuously
 increased till it becomes an integer whose square root has no decimal places or till it becomes equal to n . In those cases, k will be changed. 
 
@@ -76,7 +76,7 @@ Select the right project
 cd bonus-assignment/
 ```
 
-### Usage
+## Usage
 The project must be called from the cmd like:
 ```
 python kmst.py <input_file> <k_number>
@@ -92,9 +92,10 @@ pointn (abscissan, ordinaten)
 
 ```
 
-* <k_number> is the minimum integer number of points that the tree will span, so the following must be valid: k_number > 1 and k_number <=n
+* <k_number> is the minimum integer number of points that the tree will span, so the following must be valid: k_number > 1 and  k_number <=n
 
-##### Example 1
+## Examples
+### Example 1
 * Running the file points1.txt for k=4
 ```
 python kmst.py points1.txt 4
@@ -129,7 +130,7 @@ The links that were used are:
 In conclusion, it is noticable that the MST that is constructed contains 9 points because square root of 5 equals to 2.23606 which contains decimal places. 
 As a result, k is transformed into 9 whose root equals to 3.
 
-##### Example 2 
+### Example 2 
 * Running the file points2.txt for k=7
 ```
 python kmst.py points2.txt 7
@@ -176,7 +177,7 @@ The links that were used are:
 Last but not least, k is not changed because square root of 16 equals to 4. As a result, the smallest MST for 16 of all the 20 points is constructed and 
 its length is found.
 
-##### Example 3 
+### Example 3 
 Running the file points4.txt for k=16
 ```
 python kmst.py points4.txt 16
@@ -245,16 +246,16 @@ The links that were used are:
 In conclusion, sometimes there are different outputs because in step 5 of the algorithm, points are randomly discarded from the last chosen cell until 
 the sum of the chosen points is equal to k. As a result, different MST are constructed for some pairs, leading to a different solution.
 
-### Built with
+## Built with
 * [Spyder](https://www.spyder-ide.org/)
 * [Anaconda](https://www.anaconda.com/)
 
-### Credits
+## Credits
 * [Stefanos Kypritidis](https://github.com/stef4k) - Author
 * [Robert C. Prim](https://en.wikipedia.org/wiki/Robert_C._Prim ) (For Prim's algorithm for finding minimum spanning trees)
 
-### License
-#### MIT License
+## License
+### MIT License
 
 Copyright (c) 2019 STEFANOS KYPRITIDIS
 
