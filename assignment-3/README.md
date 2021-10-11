@@ -87,18 +87,62 @@ If the parameter -m is given, the program prints the result string as an output.
 
 ## Examples
 ### Example 1
+If the user uses the [koch_2.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/koch_2.json) file and runs the script the following way:
+
+    python lsystem.py -m koch_2.json
+   
+the output of the program should be exactly as follows:
+
+    F + F-F-F + F + F + F-F-F + F-F + F-F-F + F-F + F-F-F + F + F + F-F-F + F + F
 
 ### Example 2
+If the user runs the script the following way, using the [koch_5.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/koch_5.json) file:
+
+    python lsystem.py koch_5.json koch_5.txt
+    
+the output of the program should be the koch_5.txt file, which describes the Koch curve with five iterations.
+
+In order to view the image, run:
+
+    python mpl_draw.py koch_5.txt
+To save it to a file, run:
+
+    python mpl_draw.py koch_5.txt koch_5.png
+
+To create the island of Koch, use the file [koch_island.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/koch_island.json) to get the result koch_island.txt:
+
+    python lsystem.py koch_island.json koch_island.txt
+And then to view it, use:
+
+    python mpl_draw.py koch_island.txt
 
 ### Example 3
+To create the dragon curve, use the [dragon.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/dragon.json) file:
+
+    python lsystem.py dragon.json dragon.txt
+
+And then to view it, use:
+
+    python mpl_draw.py dragon.txt
 
 ### Example 4
+For the two Sierpiński triangles use the files [sierpinski.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/sierpinski.json) and [sierpinski_triangle_arrowhead.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/sierpinski_triangle_arrowhead.json)
 
 ### Example 5
+To create various plants use the following files [plant_1.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/plant_1.json), [plant_2.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/plant_2.json), [plant_3.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/plant_3.json), [plant_4.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/plant_4.json), [plant_5.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/plant_5.json), [plant_6.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/plant_6.json)
 
 ### Example 6
+To create the Penrose mosaic use the [penrose.json](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/penrose.json) file.
 
 ### Example 7
+If the user uses the [edge_rewriting_1.txt](https://github.com/stef4k/Algorithms-and-data-structures-assignments/blob/main/assignment-3/input%20files/edge_rewriting_1.txt) file and runs the script:
+
+    python lsystem.py -d edge_rewriting_1.txt
+
+The output should be:
+
+    FF + G + G-F-F + G + GF-G-FFG + F-G-FF-G + FG + G + F-F-GG +
+    -FF + G + G-F-FG-F + GG + F + G-FGG + F + GF-F-G + G + F-F-GG
 
 
 ##
