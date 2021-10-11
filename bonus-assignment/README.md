@@ -177,9 +177,9 @@ Last but not least, k is not changed because square root of 16 equals to 4. As a
 its length is found.
 
 ##### Example 3 
-Running the file points3.txt for k=16
+Running the file points4.txt for k=16
 ```
-python kmst.py points3.txt 16
+python kmst.py points4.txt 16
 ```
 Output can be:
 ```
