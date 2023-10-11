@@ -1,19 +1,19 @@
 # K-Minimum Spanning Tree - Bonus Assignment
 ## Description
-This project given n points in the
-two-dimensional space and a positive integer k (k<=n),
-constructs a tree spanning at least k of
-these points such that the total length of the tree is at most O(k ^(1/4)) 
-times that of a minimum-length tree spanning any k of the points.
+This project given $n$ points in the
+two-dimensional space and a positive integer $k$ $(k<=n) $,
+constructs a tree spanning at least $k$ of
+these points such that the total length of the tree is at most $O(k ^{1/4} )$ 
+times that of a minimum-length tree spanning any $k$ of the points.
 In the best case the minimum tree constructed consists of 
-exactly k points. If that is not possible the tree will
-consist of k+m points where m>0 and k+m<n and m the least integer so that the square root 
-of (k+m) has no decimal places (root (k+m) is an integer).
+exactly $k$ points. If that is not possible the tree will
+consist of $k+m$ points where $m>0$ and $k+m < n$ and $m$ the least integer so that the square root 
+of $(k+m)$ has no decimal places ( $\sqrt{k+m}$  is an integer).
 Lastly, in the worst case scenario if there is no such number
-as m, the minimum spanning tree will consist of exactly n points.
+as $m$, the minimum spanning tree will consist of exactly $n$ points.
 The output of the project describes the number of points that the 
 MST (minimum-spanning tree) consists of, the length of the MST 
-( the sum of distances of all the connections used in the MST) 
+(the sum of distances of all the connections used in the MST) 
 and finally the connections of the  points that are used to construct
 the MST. Full description is found [here](https://github.com/stef4k/Algorithms-and-data-structures-assignments2019/blob/main/bonus-assignment/ravi1996.pdf)
 
@@ -32,37 +32,37 @@ have a good chance of containing oil under the sea bed. The company has a limite
 number of oil rigs that it is willing to invest in the effort. The problem is to position
 these oil rigs at marked places so that the cost of laying down pipelines between these
 rigs is minimized. The problem at hand can be modeled as follows: given a graph with
-nonnegative edge weights and a specified number k, find a tree of minimum weight
-spanning at least k nodes. The solution to the problem will be a tree spanning
-exactly k nodes. This problem is called the k-minimum spanning tree (kMST).
+nonnegative edge weights and a specified number $k$, find a tree of minimum weight
+spanning at least $k$ nodes. The solution to the problem will be a tree spanning
+exactly $k$ nodes. This problem is called the k-minimum spanning tree (kMST).
 
 ## Algorithm
-Before calculations start, k is checked if it has a square root without any decimal places. If not, k is continuously
-increased till it becomes an integer whose square root has no decimal places or till it becomes equal to n . In those cases, k will be changed. 
+Before calculations start, $k$ is checked if it has a square root without any decimal places. If not, $k$ is continuously
+increased till it becomes an integer whose square root has no decimal places or till it becomes equal to $n$. In those cases, $k$ will be changed. 
 
-If k is equal to n, there will be only one MST (the one that contains all the n points). As a result, the MST of the n points 
+If $k$ is equal to $n$, there will be only one MST (the one that contains all the $n$ points). As a result, the MST of the $n$ points 
 is constructed by using the Prim's algorithm for finding minimum spanning trees. Via the MST, the length of the tree is calculated 
 and the appropriate output is made.
 
-In any other case ( it will be:  k < n ), the right k points must be estimated in order to find the MST for those k points. Let's 
-call S={s1,s2,...,sn} the given set of points and d(i,j) the Euclidean distance between si and sj. In order to find
-the right k points and followingly the MST, the following steps must be pursued, for each distinct pair of points si, sj in S:
-1. Construct the circle C with diameter D = root(3) * d(i, j) centered at the
+In any other case ( it will be:  $k < n$ ), the right $k$ points must be estimated in order to find the MST for those $k$ points. Let's 
+call $S={s1,s2,...,sn}$ the given set of points and $d(i,j)$ the Euclidean distance between si and sj. In order to find
+the right $k$ points and followingly the MST, the following steps must be pursued, for each distinct pair of points si, sj in S:
+1. Construct the circle C with diameter $D = \sqrt{3} * d(i, j)$ centered at the
 midpoint of the line segment (si, sj)
 2. Let Sc be the subset of S contained in C. If Sc contains fewer than
-k points, skip to the next iteration of the loop (i.e., try the next pair of
+$k$ points, skip to the next iteration of the loop (i.e., try the next pair of
 points). Otherwise, do the following.
 3. Let Q be the square of side D circumscribing C.
-4. Divide Q into k square cells each with side = D / root(k)
+4. Divide Q into $k$ square cells each with $side = D / \sqrt{k}$
 5. Sort the cells by the number of points from Sc they contain and
 choose the minimum number of cells so that the chosen cells together
-contain at least k points. In case there are more than k points in the chosen cells, randomly discard points from
+contain at least $k$ points. In case there are more than $k$ points in the chosen cells, randomly discard points from
 the last chosen cell so that the total number of points in all the cells is
-equal to k.
-6. Construct a minimum spanning tree for the k chosen points. 
-7. The solution value for the pair (si, sj) is the length of this MST.
+equal to $k$.
+6. Construct a minimum spanning tree for the $k$ chosen points. 
+7. The solution value for the pair $(si, sj)$ is the length of this MST.
 
-From all the distinct pairs select the pair with the minimum length of its MST. That MST is the soltuion and together with the length and the connections,
+From all the distinct pairs select the pair with the minimum length of its MST. That MST is the solution and together with the length and the connections,
 the appropriate output is made.
 
 
@@ -92,11 +92,11 @@ pointn (abscissan, ordinaten)
 
 ```
 
-* <k_number> is the minimum integer number of points that the tree will span, so the following must be valid: k_number > 1 and  k_number <=n
+* <k_number> is the minimum integer number of points that the tree will span, so the following must be valid: $knumber > 1$ and  $knumber <=n$
 
 ## Examples
 ### Example 1
-* Running the file points1.txt for k=4
+* Running the file points1.txt for $k=4$
 ```
 python kmst.py points1.txt 4
 ```
@@ -108,9 +108,9 @@ The links that were used are:
  ('s5', 's7'): 1.0,
  ('s7', 's6'): 1.4142135623730951}
 ```
-In conlusion, it is noticed that the k we inputed has a square root without decimal places (root(4)=2), as a result the MST contains exactly 4 points.
+In conlusion, it is noticed that the k we inputed has a square root without decimal places $(\sqrt{4} = 2)$, as a result the MST contains exactly 4 points.
 
-* Running the file points1.txt for k=5
+* Running the file points1.txt for $k=5$
 ```
 python kmst.py points1.txt 5
 ```
@@ -131,7 +131,7 @@ In conclusion, it is noticable that the MST that is constructed contains 9 point
 As a result, k is transformed into 9 whose root equals to 3.
 
 ### Example 2 
-* Running the file points2.txt for k=7
+* Running the file points2.txt for $k=7$
 ```
 python kmst.py points2.txt 7
 ```
@@ -150,7 +150,7 @@ The links that were used are:
 ```
 To sum up, k is changed from 7 to 9 and the MST for 9 points is calculated.
 
-* Running the file points2.txt for k=16
+* Running the file points2.txt for $k=16$
 ```
 python kmst.py points2.txt 16
 ```
@@ -178,7 +178,7 @@ Last but not least, k is not changed because square root of 16 equals to 4. As a
 its length is found.
 
 ### Example 3 
-Running the file points4.txt for k=16
+Running the file points4.txt for $k=16$
 ```
 python kmst.py points4.txt 16
 ```
